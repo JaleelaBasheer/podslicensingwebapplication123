@@ -1,0 +1,37 @@
+   <div class="container" style={{ overflowY: 'hidden',overflowX: 'hidden' }}>
+                    <div class="left-sidenav" style={{ flex: '0 0 auto' }}>
+            <div className="leftSideNav">
+            <ul>
+                <li>
+                <div   className={activeLink === 'home' ? 'sideLnkActive' : 'sideLnkInactive'}  >
+                
+                <a id="viewerLnk" class="sideLnk" ><i class="fa-solid fa-house sideLnkIcon"></i> Home</a>
+            </div>
+                </li>
+                <li>
+                <div onClick={handleLogin}  className={activeLink === 'login' ? 'sideLnkActive' : 'sideLnkInactive'}  >
+                
+                <a id="viewerLnk" class="sideLnk"><i class="fa-solid fa-house sideLnkIcon"></i> Home</a>
+            </div>
+                </li>
+                <li>
+                <div   className={activeLink === 'pp' ? 'sideLnkActive' : 'sideLnkInactive'}  >
+                
+                <a id="viewerLnk" class="sideLnk"><i class="fa-solid fa-house sideLnkIcon"></i> Home</a>
+            </div>
+                </li>
+               
+           
+            </ul>
+
+            </div>                  
+         </div>        
+                <div class="content">                    
+                  <div style={{backgroundColor:'yellow',width:'100%',height:'100vh',overflow:'hidden',margin:0,padding:0}}></div>
+                  {
+                    openLogin && <LoginPage/>
+                  }
+                  
+                </div>
+
+         </div>  
